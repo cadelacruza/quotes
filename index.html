@@ -9,6 +9,7 @@
       src="https://kit.fontawesome.com/9180ccaa78.js"
       crossorigin="anonymous"
     ></script>
+
     <title>Quotes</title>
   </head>
   <body>
@@ -24,15 +25,25 @@
       </div>
 
       <div id="buttons">
-        <a title="Tweet this quote"
-          ><i class="fab fa-twitter-square fa-2x" id="bird"></i
+        <a
+          id="bird"
+          title="Tweet this quote"
+          href="https://twitter.com/intent/tweet?text=This%20is%20awesome"
+          ><i class="fab fa-twitter-square fa-2x"></i
         ></a>
+        <script
+          async
+          src="https://platform.twitter.com/widgets.js"
+          charset="utf-8"
+        ></script>
 
         <input type="submit" id="btn" value="New quote" />
       </div>
     </div>
     <div id="by">
-      <p>By <a href="https://github.com/cadelacruza">Carlos</a></p>
+      <p>
+        By <a href="https://github.com/cadelacruza" target="_blank">Carlos</a>
+      </p>
     </div>
     <script src="app.js"></script>
   </body>
